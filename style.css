@@ -1,0 +1,22 @@
+
+/* Carroussel */
+
+
+
+/* Definindo a altura total do carrossel */
+#carousel{
+    height: 60vh;
+}
+/* Pedindo para o filho ter uma altura semelhante */
+.carousel-inner{
+    height: 100%;
+}
+
+img{
+    height: 100%;
+}
+
+/* Imagem com o efeito de opacidade preto */
+.overlay {
+    filter: brightness(30%);
+  }
