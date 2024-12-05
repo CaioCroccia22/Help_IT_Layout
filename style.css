@@ -1,4 +1,24 @@
 
+/* Body */
+
+
+/* Header */
+
+header{
+    background-color: #F8F9FA;
+}
+
+.nav-link{
+    color: #007BFF;
+}
+
+.nav-link.active{
+    background-color: #007BFF;
+    color: #FFF;
+}
+
+
+
 /* Carroussel */
 
 
