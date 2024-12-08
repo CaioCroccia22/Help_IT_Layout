@@ -1,7 +1,4 @@
 
-/* Body */
-
-
 /* Header */
 
 header{
@@ -10,16 +7,15 @@ header{
 }
 
 .nav-link{
-    color: #002B5B;
+    color: #2d2d2d;
 }
 
 .nav-item .nav-link.active {
-    background-color: #002B5B;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #FFF;
 }
 
 /* Carroussel */
-
 
 
 /* Definindo a altura total do carrossel */
@@ -44,39 +40,46 @@ img{
 /* Section business */
 
 #section-introduction{
-    background-color: #aaaaaa;
+    background-color: #F8F9FA;
     color: #2d2d2d;
+    
 }
 
-small{
-    color: #2d2d2d;
-}
-
-
-.btn{
-    background-color: #002B5B;
+#btn-business{
+    background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 20px;
-    color: #FFF;
+    color: #2d2d2d;
 }
 
-.btn:hover{
-    background-color: #1E90FF;
+#btn-business:hover{
+    background-color: rgba(0, 0, 0, 0.5);
     transform: translateY(-0.1em);
-    color: #FFF;
+    color: #FFF
 }
 
 
 /* Section Polices */
 
+/* Alterando coloração da seção de politicas */
 
+#section-polices{
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+/* Retirando os efeitos do  accordion buttons padrões do bootstrap */
 .accordion-button:focus {
-    box-shadow: none; /* Remove o foco */
-    background-color: transparent; /* Altere para a cor desejada */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
     border-color: transparent;
 }
 
+/* Coloração de fundo quando o accordion esta ativo */
 .accordion-button:not(.collapsed) {
-    background-color: #f8f9fa; /* Escolha sua cor para o botão ativo */
+    background-color: rgba(0, 0, 0, 0.1); 
     color: #222831;
 }
+
+/* Section Services */
+

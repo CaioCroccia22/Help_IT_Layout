@@ -81,77 +81,108 @@
                     desafiadoras com redução de custos e alta assertividade. 
                  </small>
             </div>
-                <button class="btn p-3 my-2" data-bs-toggle="collapse" data-bs-target="#section-polices">Clique aqui para conhecer mais</button>
+                <button id="btn-business" class="btn p-3 my-2" data-bs-toggle="collapse" data-bs-target="#section-polices">Clique para conhcer nossas politicas</button>
             </div>
         </div>
     </section>
     
     
      <!-- Section politicas da empresa -->
-    <section id="section-polices" class="row text-align-center">
-        <div class="col-8 mx-auto">
-            <div class="accordion">
-
+    <section id="section-polices" class="row text-align-center p-4">
+        <div class="col-12 d-flex justify-content-around">
+            <div class="accordion col-3">
                 <!-- Politica 1 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button data-mdb-collapse-init class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1">
-                            Políticas de privacidade
-                        </button>
-                    </h2>
-                    <div id="accordion-1" class="accordion-collapse collapse show" >
-                        <div class="accordion-body">
-                            This is the first item's accordion body. 
-                            It is shown by default, until the collapse 
-                            plugin adds the appropriate classes that we 
-                            use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body,
-                             though the transition does limit overflow
-                        </div>
-                    </div> 
-                </div>
-    
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button data-mdb-collapse-init class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-2">
-                            Políticas de privacidade
-                        </button>
-                    </h2>
-                    <div id="accordion-2" class="accordion-collapse collapse show" >
-                        <div class="accordion-body">
-                            This is the first item's accordion body. 
-                            It is shown by default, until the collapse 
-                            plugin adds the appropriate classes that we 
-                            use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body,
-                             though the transition does limit overflow
-                        </div>
-                    </div> 
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button data-mdb-collapse-init class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-3">
-                            Políticas de privacidade
-                        </button>
-                    </h2>
-                    <div id="accordion-3" class="accordion-collapse collapse show" >
-                        <div class="accordion-body">
-                            This is the first item's accordion body. 
-                            It is shown by default, until the collapse 
-                            plugin adds the appropriate classes that we 
-                            use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body,
-                             though the transition does limit overflow
-                        </div>
-                    </div> 
-                </div>
-    
-    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button data-mdb-collapse-init class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-1">
+                        Políticas de privacidade
+                    </button>
+                </h2>
+                <div id="accordion-1" class="accordion-collapse collapse show" >
+                    <div class="accordion-body">
+                        This is the first item's accordion body. 
+                        It is shown by default, until the collapse 
+                        plugin adds the appropriate classes that we 
+                        use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body,
+                        though the transition does limit overflow
+                    </div>
+                </div> 
             </div>
+        </div>
+        
+        <div class="accordion col-3">
+            <!-- Politica 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button data-mdb-collapse-init class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-2">
+                        Políticas de atendimento
+                    </button>
+                </h2>
+                <div id="accordion-2" class="accordion-collapse collapse show" >
+                    <div class="accordion-body">
+                        This is the first item's accordion body. 
+                        It is shown by default, until the collapse 
+                        plugin adds the appropriate classes that we 
+                        use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body,
+                        though the transition does limit overflow
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <!-- Politica 3 -->
+       <div class="accordion col-3">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button data-mdb-collapse-init class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-3">
+                    Políticas de serviço
+                </button>
+            </h2>
+            <div id="accordion-3" class="accordion-collapse collapse show" >
+                <div class="accordion-body">
+                    This is the first item's accordion body. 
+                    It is shown by default, until the collapse 
+                    plugin adds the appropriate classes that we 
+                    use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body,
+                     though the transition does limit overflow
+                </div>
+            </div> 
+        </div>
+       </div>
+
         </div>
     </section>
 
 
-    <!-- Section Serviços -->
-
+    <!-- Section nossos Serviços -->
+    <section class="p-4" id="services">
+        <div class="row">
+            <aside class="col-md-2">
+                <nav class="nav-pills flex-column nav-cardapio">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#telefonia-digital">Telefonia Digital</button>
+                    <button class="nav-link">Monitoramente de rede</button>
+                    <button class="nav-link">Contratos de Suporte T.I</button>
+                    <button class="nav-link">Serviços de T.I</button>
+                </nav>
+            </aside>
+            <div class="col-md-10">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="telefonia-digital">
+                        <div class="row">
+                            <div class="col-md-6">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Inventore veritatis ullam esse ipsam est nam dignissimos, culpa iusto cumque fugit, beatae aut deserunt! 
+                                Sint, maxime aut quisquam illo laboriosam quod!
+                            </div>
+                            <div class="col-md-4">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
