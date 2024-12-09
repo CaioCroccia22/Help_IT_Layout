@@ -4,6 +4,7 @@
 header{
     background-color: #F8F9FA;
     height: 13vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link{
@@ -28,7 +29,7 @@ header{
 }
 
 /* Imagem ocupa todo o carrossel */
-img{
+.carousel-item > img{
     height: 100%;
 }
 
@@ -86,4 +87,9 @@ img{
 #services{
     margin-left: 75px;
     margin-top: 30px;
+}
+
+.img-icon{
+    height: 150px;
+    width: 150px;
 }
