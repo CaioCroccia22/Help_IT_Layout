@@ -11,6 +11,7 @@ header{
     color: #2d2d2d;
 }
 
+/* Efeito quando a parte do menu esta ativa */
 .nav-item .nav-link.active {
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFF;
@@ -69,27 +70,50 @@ header{
     
 }
 
-/* Retirando os efeitos do  accordion buttons padrões do bootstrap */
+/* Adiciona efeitos quando o accordion esta fechado */
 .accordion-button:focus {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     background-color: transparent;
     border-color: transparent;
+    
+    
 }
 
 /* Coloração de fundo quando o accordion esta ativo */
 .accordion-button:not(.collapsed) {
     background-color: rgba(0, 0, 0, 0.1); 
     color: #222831;
+    transform: scale(0.95);
 }
 
 /* Section Services */
 
+
+/* Cor de fundo da section services */
 #services{
-    margin-left: 75px;
-    margin-top: 30px;
+    /* margin-left: 75px; */
+    background-color: rgba(207, 207, 207, 0.5);
+    border: rgba(0, 0, 0, 0.5) solid 1px;
 }
 
+/* Configuração do tamanho e altura da imagem */
 .img-icon{
     height: 150px;
     width: 150px;
+}
+
+.nav-link.p-2.active{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+/* Adiciona um efeito de expansão quando clicar nos nav-links */
+.nav-link.p-2.active:active{
+    transform: scale(0.95);
+}
+
+/* Retira a cor dos nav-links da nav quando vc clica */
+.nav {
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: black;
 }
