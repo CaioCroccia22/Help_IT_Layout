@@ -27,10 +27,10 @@
                      <!-- ms-auto -> adicionado para empurrar os itens do menu para o lado direito -->
                     <ul class="nav nav-pills nav-fill">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Quem somos</a>
+                            <a class="nav-link active" href="#section-introduction">Quem somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
+                            <a class="nav-link" href="#services">Serviços</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Galeria</a>
@@ -45,7 +45,7 @@
     </header>
 
     <!-- Carrossel -->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div id="carousel"  data-bs-spy="scroll"  class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-smooth-scroll="true">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./img/img-carrossel.jpg" alt="" class="d-block w-100 custom-img overlay">
@@ -68,7 +68,7 @@
     </div>
 
     <!-- Section businesss-->
-    <section class="py-4" data-bs-spy="scroll" id="section-introduction">
+    <section class="py-4" id="section-introduction">
         <div class="container text-center">
             <div class="row">
                 <h1 class="h1 text-align-center justify-content-center">
@@ -154,35 +154,90 @@
     </section>
 
 
-    <!-- Section nossos Serviços -->
-    <section class="p-4" id="services">
-        <div class="row">
-            <aside class="col-md-2">
-                <nav class="nav-pills flex-column nav-cardapio">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#telefonia-digital">Telefonia Digital</button>
-                    <button class="nav-link">Monitoramente de rede</button>
-                    <button class="nav-link">Contratos de Suporte T.I</button>
-                    <button class="nav-link">Serviços de T.I</button>
-                </nav>
-            </aside>
-            <div class="col-md-10">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="telefonia-digital">
-                        <div class="row">
-                            <div class="col-md-6">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Inventore veritatis ullam esse ipsam est nam dignissimos, culpa iusto cumque fugit, beatae aut deserunt! 
-                                Sint, maxime aut quisquam illo laboriosam quod!
-                            </div>
-                            <div class="col-md-4">
-                                <img src="" alt="">
-                            </div>
+   <!-- Section nossos Serviços -->
+<section class="py-4" id="services">
+    <div class="row">
+        <!-- Menu lateral -->
+        <aside class="col-md-2">
+            <nav class="nav flex-column nav-pills justify-content-center">
+                <button class="nav-link active p-2" data-bs-toggle="tab" data-bs-target="#telefonia-digital">
+                    Telefonia Digital
+                </button>
+                <button class="nav-link p-2" data-bs-toggle="tab" data-bs-target="#monitoramento-de-rede">
+                    Monitoramento de Rede
+                </button>
+                <button class="nav-link p-2" data-bs-toggle="tab" data-bs-target="#contrato-suporte-ti">
+                    Contratos de Suporte T.I
+                </button>
+                <button class="nav-link p-2" data-bs-toggle="tab" data-bs-target="#servicos-ti">
+                    Serviços de T.I
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo das abas -->
+        <div class="col-md-10">
+            <div class="tab-content">
+                <!-- Telefonia Digital -->
+                <div class="tab-pane fade show active" id="telefonia-digital">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Inventore veritatis ullam esse ipsam est nam dignissimos, culpa iusto cumque fugit, beatae aut deserunt! 
+                            Sint, maxime aut quisquam illo laboriosam quod!
+                        </div>
+                        <div class="col-md-4">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoramento de Rede -->
+                <div class="tab-pane fade" id="monitoramento-de-rede">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Inventore veritatis ullam esse ipsam est nam dignissimos, culpa iusto cumque fugit, beatae aut deserunt! 
+                            Sint, maxime aut quisquam illo laboriosam quod!
+                        </div>
+                        <div class="col-md-4">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contratos de Suporte T.I -->
+                <div class="tab-pane fade" id="contrato-suporte-ti">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Inventore veritatis ullam esse ipsam est nam dignissimos, culpa iusto cumque fugit, beatae aut deserunt! 
+                            Sint, maxime aut quisquam illo laboriosam quod!
+                        </div>
+                        <div class="col-md-4">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serviços de T.I -->
+                <div class="tab-pane fade" id="servicos-ti">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Inventore veritatis ullam esse ipsam est nam dignissimos, culpa iusto cumque fugit, beatae aut deserunt! 
+                            Sint, maxime aut quisquam illo laboriosam quod!
+                        </div>
+                        <div class="col-md-4">
+                            <img src="" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 
 
