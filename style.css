@@ -2,20 +2,36 @@
 /* Header */
 
 header{
-    background-color: #F8F9FA;
+    background-color: #2D89EF;
+    color: #FFF;
     height: 13vh;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+
+/* Menus de navegação */
+/* Tanto do header, quanto da section services */
 .nav-link{
-    color: #2d2d2d;
+    color: #FFF;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Efeito quando a parte do menu esta ativa */
-.nav-item .nav-link.active {
-    background-color: rgba(0, 0, 0, 0.5);
+
+.nav-item .nav-link.active,
+.nav-link.p-2.active
+ {
+    background-color: #034786;
     color: #FFF;
 }
+
+.nav-item .nav-link.active:hover,
+.nav-link.p-2.active:hover{
+    transform: translateY(-0.10em);
+}
+
+
+
 
 /* Carroussel */
 
@@ -41,23 +57,27 @@ header{
 
 /* Section business */
 
+/* Definido cor de fundo e texto */
 #section-introduction{
-    background-color: #F8F9FA;
-    color: #2d2d2d;
+    background-color: #F4F4F4;
+    color: #333333;
     
 }
 
+/* Definindo cor e formato do botão */
 #btn-business{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #2D89EF;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 20px;
-    color: #2d2d2d;
+    color: #FFF;
 }
 
+/* Definindo hover do botão */
 #btn-business:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00B894;
     transform: translateY(-0.1em);
-    color: #FFF
+    color: #FFF;
 }
 
 
@@ -66,14 +86,22 @@ header{
 /* Alterando coloração da seção de politicas */
 
 #section-polices{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #FFFFFF;
     
 }
 
 /* Adiciona efeitos quando o accordion esta fechado */
+
+.accordion-button{
+    background-color: #2D89EF;
+    color: #FFF;
+}
+
+/* Coloração de fundo e formatação quando accordion esta fechado */
 .accordion-button:focus {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: transparent;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: #2D89EF;
+    color: #FFF;
     border-color: transparent;
     
     
@@ -81,8 +109,8 @@ header{
 
 /* Coloração de fundo quando o accordion esta ativo */
 .accordion-button:not(.collapsed) {
-    background-color: rgba(0, 0, 0, 0.1); 
-    color: #222831;
+    background-color: #034786; 
+    color: #FFF;
     transform: scale(0.95);
 }
 
@@ -92,8 +120,8 @@ header{
 /* Cor de fundo da section services */
 #services{
     /* margin-left: 75px; */
-    background-color: rgba(207, 207, 207, 0.5);
-    border: rgba(0, 0, 0, 0.5) solid 1px;
+    background-color: #F4F4F4;
+    
 }
 
 /* Configuração do tamanho e altura da imagem */
@@ -102,18 +130,22 @@ header{
     width: 150px;
 }
 
-.nav-link.p-2.active{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #FFF;
-}
-
-/* Adiciona um efeito de expansão quando clicar nos nav-links */
-.nav-link.p-2.active:active{
-    transform: scale(0.95);
+/* Define cor de texto do nav-link (Quando não esta ativo)*/
+.nav-link.p-2{
+    color: #333333;
 }
 
 /* Retira a cor dos nav-links da nav quando vc clica */
 .nav {
     --bs-nav-link-color: black;
     --bs-nav-link-hover-color: black;
+}
+
+/* Section contact */
+
+#btn-contact{
+    background-color: #2D89EF;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
 }
