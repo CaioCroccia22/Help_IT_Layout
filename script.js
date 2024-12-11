@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
     // JQuery Validate Plugin
-    $('#contact-form').validate({
+    $('form').validate({
         rules: {
             email: {
                 required: true,
@@ -24,18 +24,18 @@ $(document).ready(function(){
                 minlength: 2
             }
         },
-        messages: {
-            email: {
-                required: "Por favor, insira seu endereço de e-mail.",
-                email: "Por favor, insira um e-mail válido."
-            },
-            tel: {
-                required: "Por favor, insira seu número de telefone."
-            },
-            name: {
-                required: "Por favor, insira seu nome completo.",
-                minlength: "Seu nome deve ter pelo menos 2 caracteres."
+            messages: {
+                email: {
+                    required: "Por favor, insira seu endereço de e-mail.",
+                    email: "Por favor, insira um e-mail válido."
+                },
+                tel: {
+                    required: "Por favor, insira seu número de telefone."
+                },
+                name: {
+                    required: "Por favor, insira seu nome completo.",
+                    minlength: "Seu nome deve ter pelo menos 2 caracteres."
+                }
             }
-        }
     });
 })
